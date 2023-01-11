@@ -4,7 +4,7 @@ A packet "tapping" (duplicating) service based on eBPF, written using Cilium.
 This program can be used to offload network traffic to a remote destination for numerous reasons: Intrustion detection and prevention (using for example "Suricata"), Anomely detection, etc.
 The benifit of offloading network traffic for high throughput, low latency services comes when the cost of offloading traffic is **lower** than the computation needed to be done "inline". Though, this requires extensive performance measurments.
 
-## High level architecture:
+## High level architecture
 The tapper has two ends - a `transmit` end which transmits **encapsulated packets** to a destination ip using a custom UDP header,
 and a `recieve` end which recieves encapsulated packets and **decapsulates** them, in the following manner:
 <p align="center">
