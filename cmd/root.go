@@ -9,7 +9,7 @@ import (
 
 var rootCmd = cobra.Command{
 	Use:  "fwtapper",
-	Long: "An in-kernel traffic tapper for Azure Firewall based on eBPF/XDP.",
+	Long: "An in-kernel traffic tapper based on eBPF.",
 }
 
 func init() {
